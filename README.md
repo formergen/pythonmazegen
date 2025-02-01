@@ -30,7 +30,7 @@ pip install pygame pillow
 To run the script, use the following command:
 
 ```bash
-python maze_generator.py [options]
+python maze.py [options]
 ```
 
 ### Options
@@ -48,24 +48,24 @@ python maze_generator.py [options]
 1. **Create a 50x50 maze with a cell size of 15, save to file "my_maze.png", without solving:**
 
 ```bash
-python maze_generator.py -W 50 -H 50 -c 15 -n my_maze
+python maze.py -W 50 -H 50 -c 15 -n my_maze
 ```
 
 2. **Create a 100x100 maze with a cell size of 10, split into 100x100 tiles, save to files "large_maze_combined.png" and "large_maze_solved_combined.png", with solving:**
 
 ```bash
-python maze_generator.py -W 100 -H 100 -c 10 -t 100 -n large_maze -s
+python maze.py -W 100 -H 100 -c 10 -t 100 -n large_maze -s
 ```
 
 3. **Create a 30x30 maze with a cell size of 20, without tiles, without solutions:**
 
 ```bash
-python maze_generator.py -W 30 -H 30 -c 20 -n small_maze --no-tiling
+python maze.py -W 30 -H 30 -c 20 -n small_maze --no-tiling
 ```
 
 ## Code Structure
 
-- `maze_generator.py`: The main script that contains the `Maze` and `Cell` classes, as well as functions for generating and saving mazes.
+- `maze.py`: The main script that contains the `Maze` and `Cell` classes, as well as functions for generating and saving mazes.
 
 ## How it works
 
